@@ -1,11 +1,11 @@
-import ChartIcon from '../../../resources/chart'
+import {Link} from 'react-router-dom'
 
 const FooterButton = (props) => {
     return(
-        <button>
-            <ChartIcon className="w-10 h-10 mx-2"/>
+        <Link className={"mx-auto"} to={props.to}>
+            <props.icon className="w-10 h-10 mx-2"/>
             {props.name}
-        </button>
+        </Link>
     )
 }
 
