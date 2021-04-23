@@ -5,6 +5,12 @@ import React from "react";
 export default class extends React.Component {
     constructor(props) {
         super(props);
+        
+        this.room = 2;
+        this.name = "一柳壮綱";
+        this.hall = 1;
+        this.floor = 1;
+
         this.displayList = {
             notSubmitted: {
                 Icon: XIcon,
@@ -32,7 +38,10 @@ export default class extends React.Component {
                         <this.state.display.Icon className="w-20 h-20 mx-auto" />
                         {this.state.display.message}
                     </button>
-                    <div className="text-base mt-2 md:text-2xl md:mt-3">0001号室</div>
+                    <div className="text-base md:text-2xl mt-3 md:mt-6">
+                        <span>{`${this.hall}${this.floor}${this.room.toString().padStart(2, '0')}号室`}</span>
+                        <span className="pl-2 md:pl-4">{this.name}</span>
+                    </div>
                 </div>
             </div>
         )
