@@ -3,11 +3,12 @@ import Heading from "../resources/Heading/Heading";
 import React from "react";
 
 export default class UnSubmit extends React.Component {
-    constructor() {
+    constructor(props) {
+        super(props);
         this.people = [
             {
                 room: 2,
-                name: "一柳壮綱",
+                name: "ABC",
             },
         ];
         this.hall = 1;

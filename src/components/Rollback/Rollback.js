@@ -5,7 +5,7 @@ import React from "react";
 export default class extends React.Component {
     constructor(props) {
         super(props);
-        
+
         this.room = 2;
         this.name = "一柳壮綱";
         this.hall = 1;

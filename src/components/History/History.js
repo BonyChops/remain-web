@@ -5,16 +5,17 @@ import './History.css';
 import Table from './parts/Table';
 
 export default class History extends React.Component {
-    constructor() {
+    constructor(props) {
+        super(props);
         this.people = [
             {
                 room: 1,
-                name: "鈴木颯太",
+                name: "EEE",
                 result: "在寮確認済"
             },
             {
                 room: 3,
-                name: "川原隼平",
+                name: "",
                 result: "外泊中"
             },
         ];
