@@ -1,6 +1,6 @@
 import './App.css';
 import Footer from "./components/Footer/Footer";
-import Rollback from "./components/Rollback/Roleback";
+import Rollback from "./components/Rollback/Rollback";
 import History from "./components/History/History";
 import UnSubmit from "./components/UnSubmit/UnSubmit";
 import { BrowserRouter, Route, Switch, withRouter } from "react-router-dom";
@@ -16,7 +16,7 @@ function App(props) {
           <Route exact path={"/unSubmit"} render={() => <UnSubmit />} />
           <Route component={NotFound} />
         </Switch>
-        <Footer isSubmit={false} unSubmitNum={6} />
+        <Footer isSubmit={false} unSubmitNum={1} />
       </BrowserRouter>
     </div>
   );
