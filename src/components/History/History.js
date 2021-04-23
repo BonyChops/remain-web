@@ -1,33 +1,36 @@
+import React from 'react';
 import Heading from '../resources/Heading/Heading';
 import './History.css';
 
 import Table from './parts/Table';
 
-const History = (props) => {
-    const rows = [
-        {
-            roomId: 1,
-            name: "鈴木颯太",
-            result: "在寮確認済"
-        },
-        {
-            roomId: 3,
-            name: "川原隼平",
-            result: "外泊中"
-        },
-    ];
-    const hall = 1;
-    const floor = 1;
+export default class History extends React.Component {
+    constructor() {
+        this.people = [
+            {
+                room: 1,
+                name: "鈴木颯太",
+                result: "在寮確認済"
+            },
+            {
+                room: 3,
+                name: "川原隼平",
+                result: "外泊中"
+            },
+        ];
+        this.hall = 1;
+        this.floor = 1;
+    }
 
-    return (
-        <div className="flex flex-col h-screen">
-            <Heading content={`${hall}号館 ${floor}階`} />
-            <Table rows={rows} hall={hall} floor={floor} />
-            <div className="flex-1"></div> {/* 余白 */}
-            <button className="w-36 md:w-48 focus:outline-none py-2 mx-auto rounded-2xl border-2 shadow-lg md:text-lg">提出</button>
-            <div className="h-24 md:h-32"></div> {/* 余白 */}
-        </div>
-    );
+    render() {
+        return (
+            <div className="flex flex-col h-screen">
+                <Heading content={`${this.hall}号館 ${this.floor}階`} />
+                <Table rows={this.people} hall={this.hall} floor={this.floor} />
+                <div className="flex-1"></div> {/* 余白 */}
+                <button className="w-36 md:w-48 focus:outline-none py-2 mx-auto rounded-2xl border-2 shadow-lg md:text-lg">提出</button>
+                <div className="h-24 md:h-32"></div> {/* 余白 */}
+            </div>
+        );
+    }
 }
-
-export default History;

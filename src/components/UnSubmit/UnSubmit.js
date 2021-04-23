@@ -1,21 +1,25 @@
 import Table from "./parts/Table";
 import Heading from "../resources/Heading/Heading";
+import React from "react";
 
-const UnSubmit = (props) => {
-    const rows = [
-        {
-            roomId: 2,
-            name: "一柳壮綱",
-        },
-    ];
-    const hall = 1;
-    const floor = 1;
+export default class UnSubmit extends React.Component {
+    constructor() {
+        this.people = [
+            {
+                room: 2,
+                name: "一柳壮綱",
+            },
+        ];
+        this.hall = 1;
+        this.floor = 1;
+    }
 
-    return (
-        <div className="flex flex-col">
-            <Heading content={`${hall}号館 ${floor}階`} />
-            <Table rows={rows} hall={hall} floor={floor} />
-        </div>
-    );
+    render() {
+        return (
+            <div className="flex flex-col">
+                <Heading content={`${this.hall}号館 ${this.floor}階`} />
+                <Table rows={this.people} hall={this.hall} floor={this.floor} />
+            </div>
+        );
+    }
 }
-export default UnSubmit;
