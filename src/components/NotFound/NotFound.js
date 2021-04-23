@@ -5,7 +5,6 @@ const NotFound = (props) => {
                 <h1 className="text-3xl">Not Found</h1>
                 <h2 className="text-2xl">That's all we know.</h2>
             </div>
-
         </div>
     )
 }

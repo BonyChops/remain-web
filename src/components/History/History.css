@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tb {
+    @apply border-t-2 border-b-2
+}
+
+.tr + .tr {
+    @apply border-t-2
+}
