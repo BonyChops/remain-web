@@ -10,12 +10,12 @@ export default class History extends React.Component {
         this.people = [
             {
                 room: 1,
-                name: "EEE",
+                name: "東京太郎",
                 result: "在寮確認済"
             },
             {
                 room: 3,
-                name: "",
+                name: "大阪洋子",
                 result: "外泊中"
             },
         ];

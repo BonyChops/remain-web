@@ -8,7 +8,7 @@ export default class UnSubmit extends React.Component {
         this.people = [
             {
                 room: 2,
-                name: "ABC",
+                name: "春日部慎之助",
             },
         ];
         this.hall = 1;
