@@ -7,7 +7,7 @@ export default class extends React.Component {
         super(props);
 
         this.room = 2;
-        this.name = "一柳壮綱";
+        this.name = "ブラザー";
         this.hall = 1;
         this.floor = 1;
 
