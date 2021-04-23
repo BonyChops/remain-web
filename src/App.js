@@ -16,7 +16,7 @@ function App(props) {
           <Route exact path={"/unSubmit"} render={() => <UnSubmit />} />
           <Route component={NotFound} />
         </Switch>
-        <Footer isSubmit={false} />
+        <Footer isSubmit={false} unSubmitNum={6} />
       </BrowserRouter>
     </div>
   );
